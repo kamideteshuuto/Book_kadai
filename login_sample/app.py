@@ -44,6 +44,10 @@ def logout():
     session.pop('user', None) # session の破棄
     return redirect(url_for('index')) # ログイン画面にリダイレクト
 
+@app.route('/book')
+def book_form():
+    return render_template('register.html')
+
 @app.route('/register_exe', methods=['POST'])
 def register_exe():
     user_name = request.form.get('username')
