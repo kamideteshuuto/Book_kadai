@@ -46,7 +46,20 @@ def logout():
 
 @app.route('/book')
 def book_form():
-    return render_template('register.html')
+    return render_template('newbook.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @app.route('/register_exe', methods=['POST'])
 def register_exe():
